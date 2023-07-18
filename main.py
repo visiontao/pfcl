@@ -126,7 +126,7 @@ def main(args):
         print (f'aux_dataset: none')    
                               
 
-    save_log_name = os.path.join(args.model, 'rss_log_{:s}_{:d}_{:d}.txt'.format(args.dataset, args.n_tasks, args.n_batches))     
+    save_log_name = os.path.join(args.model, 'rss_log_{:s}_{:d}.txt'.format(args.dataset, args.n_tasks))     
     with open(save_log_name, 'a') as f:
         f.write(f'\n\n model: {args.model}, dataset: {args.dataset}({args.n_tasks} tasks)')
         f.write(f'\n alpha: {args.alpha}, beta: {args.beta}, aux_dataset: {args.aux_dataset}({aux_dataset.length} images)')
