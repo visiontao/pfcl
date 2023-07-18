@@ -63,8 +63,6 @@ class PFCL:
             
             if not self.args.stop_kd:
                 loss += self.args.alpha * kl_div(predict[ind,:], predict_old[ind,:])            
-#                loss += self.args.alpha * F.mse_loss(predict[ind,:], predict_old[ind,:])            
-
     
         loss.backward()
         self.optim.step()
