@@ -29,7 +29,7 @@ def get_args_parser():
     parser.add_argument('--batch_size', type = int, default = 32)
     parser.add_argument('--alpha', type = float, default = 1)
     parser.add_argument('--beta', type = float, default = 1)
-    parser.add_argument('--n_batches', type = int, default = 0)
+    parser.add_argument('--n_batches', type = int, default = 5)
 
     parser.add_argument('--device_id', type = int, default = 0)
     parser.add_argument('--seed', type = int, default = 123)
